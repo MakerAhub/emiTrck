@@ -1,0 +1,77 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+              <form>
+                <!-- bind (ngModel)]="trackUserObj." to elements for using API-->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" id="CompName" (ngModel)]="trackUserObj.CompanyName" class="form-control form-control-lg" />
+                      <label class="form-label" for="CompName">Company Name</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" id="logoUrl" (ngModel)]="trackUserObj.logoURL" class="form-control form-control-lg" />
+                      <label class="form-label" for="logoURL">Company logo URL</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 d-flex align-items-center">
+  
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="text" class="form-control form-control-lg" (ngModel)]="trackUserObj.Location" id="location" />
+                      <label for="location" class="form-label">Location</label>
+                    </div>
+                  </div>
+                  <div  class="col-md-6 mb-4 d-flex align-items-center">
+                    <div data-mdb-input-init class="form-outline-lg">
+                        <input type="text" id="GSTNum" (ngModel)]="trackUserObj.GstNo" class="form-control form-control" />
+                        <label class="form-label" for="GSTNum">GST number</label>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="email" id="emailAddress" (ngModel)]="trackUserObj.Email" class="form-control form-control-lg" />
+                      <label class="form-label" for="emailAddress">Email</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div data-mdb-input-init class="form-outline">
+                      <input type="tel" id="phoneNumber" (ngModel)]="trackUserObj.phoneNo" class="form-control form-control-lg" />
+                      <label class="form-label" for="phoneNumber">Phone Number</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <input data-mdb-button-init data-mdb-ripple-init (click)="signupNrm()" class="btn btn-success btn-lg" type="submit" value="Submit" />
+                    </div>
+                  <!--<button (click)="signup()" class="btn btn-success btn-lg">Submit</button> -->
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
